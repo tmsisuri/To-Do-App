@@ -35,6 +35,7 @@ dependencies {
     implementation libs.constraintlayout
     implementation libs.recyclerview
     implementation libs.material
+    implementation libs.activity
 
     testImplementation libs.junit
     androidTestImplementation libs.junit.v115
