@@ -18,7 +18,7 @@
         android:layout_marginTop="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tastsRecyclerView"
+        android:id="@+id/tasksRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tasksText"
@@ -33,6 +33,7 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="32dp"
         android:backgroundTint="@android:color/holo_green_dark"
+        android:contentDescription="Add task"
         android:src="@drawable/baseline_add"/>
 
 </RelativeLayout>
