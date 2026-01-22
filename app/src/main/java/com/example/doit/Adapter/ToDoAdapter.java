@@ -20,6 +20,7 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
 
     public ToDoAdapter(MainActivity activity) {
         this.activity = activity;
+        this.todoList = new java.util.ArrayList<>();
     }
 
     @NonNull

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView taskRecyclerViwe;
+    private RecyclerView taskRecyclerView;
     private ToDoAdapter taskAdapter;
 
     private List<ToDoModel> taskList;
@@ -20,14 +20,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
-
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         taskList = new ArrayList<>();
 
-        taskRecyclerViwe = findViewById(R.id.tasksRecyclerView);
-        taskRecyclerViwe.setLayoutManager(new LinearLayoutManager(this));
+        taskRecyclerView = findViewById(R.id.tasksRecyclerView);
+        taskRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         taskAdapter = new ToDoAdapter((this));
-        taskRecyclerViwe.setAdapter((taskAdapter));
+        taskRecyclerView.setAdapter((taskAdapter));
 
         ToDoModel task = new ToDoModel();
         task.setTask("This is a Test Task");
