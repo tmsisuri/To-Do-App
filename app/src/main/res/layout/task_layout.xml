@@ -20,8 +20,7 @@
             android:layout_centerHorizontal="true"
             tool:text="This is a sample task inside the application."
             android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:buttonTint="@android:color/holo_green_dark" />
+            android:paddingEnd="8dp" />
 
     </RelativeLayout>
 
